@@ -1,0 +1,37 @@
+@font-face {
+	font-family: 'DropletRegular';
+	src: url('/css/fonts/dropletr-webfont.ttf') format('truetype'),
+		 url('/css/fonts/dropletr-webfont.woff') format('woff'),
+		 url('/css/fonts/dropletr-webfont.svg#webfontt7ac7MJ4') format('svg'),
+		 url('/css/fonts/dropletr-webfont.eot?#iefix') format('eot');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'WendyLPRegular';
+	src: url('/css/fonts/wendylp-medium-webfont.ttf') format('truetype'),
+		 url('/css/fonts/wendylp-medium-webfont.woff') format('woff'),
+		 url('/css/fonts/wendylp-medium-webfont.svg#WendyLPRegular') format('svg'),
+		 url('/css/fonts/wendylp-medium-webfont.eot?#iefix') format('eot');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'WendyLPBold';
+	src: url('/css/fonts/wendylp-bold-webfont.ttf') format('truetype'),
+		 url('/css/fonts/wendylp-bold-webfont.woff') format('woff'),
+		 url('/css/fonts/wendylp-bold-webfont.svg#WendyLPBold') format('svg'),
+		 url('/css/fonts/wendylp-bold-webfont.eot?#iefix') format('eot');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DigitalRegular';
+	src: url('/css/fonts/digitalicg-webfont.ttf') format('truetype'),
+		 url('/css/fonts/digitalicg-webfont.woff') format('woff'),
+		 url('/css/fonts/digitalicg-webfont.svg#DigitalRegular') format('svg'),
+		 url('/css/fonts/digitalicg-webfont.eot?#iefix') format('eot');
+	font-weight: normal;
+	font-style: normal;
+}

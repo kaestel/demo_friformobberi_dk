@@ -1,0 +1,165 @@
+.front #header h1 {display: none;}
+
+/*
+.front.ready #content .canvas {
+	-webkit-animation: sphere_whup 1400ms ease-out 0ms 1;
+}
+
+@-webkit-keyframes sphere_whup {
+	0% {-webkit-transform: scale(0);}
+	20% {-webkit-transform: scale(1.08);}
+	45% {-webkit-transform: scale(0.94);}
+	65% {-webkit-transform: scale(1.03);}
+	100% {-webkit-transform: scale(1);}
+}
+*/
+
+/*.front #content canvas.front,*/
+.front #content ul.front {margin: 0; padding: 0; list-style: none; position: absolute; left: 240px; top: 73px; width: 543px; height: 543px; background: transparent url(/img/bg_sphere.png) center center no-repeat;
+/*	-webkit-transition: rotate 1s linear;
+	-webkit-transform: rotate(1000deg);
+	-webkit-animation: sphere_rotate 240s linear 0ms infinite;*/
+}
+.front #content li {position: absolute; overflow: hidden; z-index: 20;
+	/*background: red; opacity: 0.5;*/
+}
+.front #content li h3 {margin: 0; padding: 0; height: 100%;}
+.front #content li a {display: block; height: 100%; text-indent: -500px;}
+
+.front #content .center_text {position: absolute; left: 412px; top: 295px; width: 200px; height: 100px; background: transparent url(/img/bg_sphere_text.png) top center no-repeat;
+	-webkit-animation: sphere_text_scale 2.5s ease 0ms infinite;
+}
+
+.front #content .massage {top: 129px; left: 356px; height: 95px; width: 95px;
+	-moz-transform: rotate(50deg);
+	-webkit-transform: rotate(50deg);
+}
+.front #content .friends {top: 89px; left: 96px; height: 95px; width: 95px;
+	-moz-transform: rotate(-40deg);
+	-webkit-transform: rotate(-40deg);
+}
+/*.front #content .snowboard {top: 173px; left: 416px; height: 156px; width: 80px;
+	-moz-transform: rotate(-15deg);
+	-webkit-transform: rotate(-15deg);
+}*/
+.front #content .dance {top: 57px; left: 215px; height: 95px; width: 118px;
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+}
+.front #content .puzzle {top: 369px; left: 86px; height: 95px; width: 80px;
+	-moz-transform:rotate(50deg);
+	-webkit-transform:rotate(50deg);
+}
+.front #content .gotchi {top: 220px; left: 6px; height: 102px; width: 141px;
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+}
+.front #content .dilemma {top: 329px; left: 367px; height: 123px; width: 100px;
+	-moz-transform: rotate(50deg);
+	-webkit-transform: rotate(50deg);
+}
+/*.front #content .paint {top: 426px; left: 140px; height: 95px; width: 80px;
+	-moz-transform:rotate(20deg);
+	-webkit-transform:rotate(20deg);
+}*/
+.front #content .jump {top: 426px; left: 225px; height: 95px; width: 80px;}
+
+.front #content .baloon {top: -15px; left: 158px; height: 100px; width: 100px; background: transparent url(/img/bg_front_baloon.png) top center no-repeat; z-index: 15;
+	-webkit-animation: baloon 2.5s ease 0ms infinite;
+	-moz-transform: rotate(-22deg);
+}
+@-webkit-keyframes baloon {
+	0% {-webkit-transform: translate3d(0,5px,0) rotate(-22deg);}
+	50% {-webkit-transform: translate3d(0,0,0) rotate(-22deg);}
+	100% {-webkit-transform: translate3d(0,5px,0) rotate(-22deg);}
+}
+
+.front #content .xfighter {top: 211px; left: -10px; height: 60px; width: 60px; background: transparent url(/img/bg_front_x_fighter.png) top center no-repeat; z-index: 15;
+	-webkit-animation: xfighter 2.2s ease 0ms infinite;
+	-moz-transform: rotate(-80deg);
+}
+@-webkit-keyframes xfighter {
+	0% {-webkit-transform: translate3d(5px,0,0) rotate(-80deg);}
+	50% {-webkit-transform: translate3d(0,0,0) rotate(-80deg);}
+	100% {-webkit-transform: translate3d(5px,0,0) rotate(-80deg);}
+}
+
+.front #content .trampolin_bear {top: 415px; left: 218px; height: 100px; width: 100px; background: transparent url(/img/bg_front_trampolin_bear.png) top center no-repeat; z-index: 15;
+	-webkit-animation: trampolin_bear 1050ms ease-in-out 0ms infinite; /*cubic-bezier(0.5, 0, 0, 1.0)*/
+	-moz-transform: rotate(180deg);
+}
+@-webkit-keyframes trampolin_bear {
+	0% {-webkit-transform: translate3d(0,50px,0) rotate(160deg);}
+	50% {-webkit-transform: translate3d(0,0,0) rotate(160deg);}
+	100% {-webkit-transform: translate3d(0,50px,0) rotate(160deg);}
+}
+.front #content .birds {height: 60px; width: 60px; background-color: transparent; background-position: top left; background-repeat: no-repeat;}
+.front #content .green_bird {top: 420px; left: 420px; background-image: url(/img/bg_front_green_bird.png);}
+.front #content .blue_bird {top: 420px; left: 470px; background-image: url(/img/bg_front_blue_bird.png);}
+.front #content .brown_bird {top: 360px; left: 470px; background-image: url(/img/bg_front_brown_bird.png);}
+
+.front #content .brown_bird_down {background-position: top right;
+	-webkit-animation: brown_bird 2700ms ease-in 0ms infinite;
+}
+.front #content .brown_bird_up {background-position: top left;
+	-webkit-animation: green_bird_up 2700ms ease-in 0ms infinite;
+}
+
+.front #content .blue_bird_down {background-position: top right;
+	-webkit-animation: blue_bird 3000ms ease-in 0ms infinite;
+}
+.front #content .blue_bird_up {background-position: top left;
+	-webkit-animation: green_bird_up 3000ms ease-in 0ms infinite;
+}
+
+.front #content .green_bird_down {
+	-webkit-animation: green_bird 2500ms ease-in 0ms infinite;
+}
+.front #content .green_bird_up {background-position: top right;
+	-webkit-animation: green_bird_up 2500ms ease-in 0ms infinite;
+}
+
+@-webkit-keyframes green_bird {
+	0% {-webkit-transform: translate3d(0,15px,0) rotate(140deg);}
+	75% {-webkit-transform: translate3d(-10px,0,0) rotate(140deg);}
+	100% {-webkit-transform: translate3d(0,15px,0) rotate(140deg);}
+}
+@-webkit-keyframes green_bird_up {
+	0% {opacity: 0;}
+	76% {opacity: 0;}
+	79% {opacity: 1;}
+	82% {opacity: 0;}
+	85% {opacity: 1;}
+	88% {opacity: 0;}
+	91% {opacity: 1;}
+	94% {opacity: 0;}
+	97% {opacity: 1;}
+	100% {opacity: 0;}
+}
+@-webkit-keyframes blue_bird {
+	0% {-webkit-transform: translate3d(0,10px,0) rotate(130deg);}
+	75% {-webkit-transform: translate3d(-10px,0,0) rotate(130deg);}
+	100% {-webkit-transform: translate3d(0,10px,0) rotate(130deg);}
+}
+@-webkit-keyframes brown_bird {
+	0% {-webkit-transform: translate3d(0,20px,0) rotate(120deg);}
+	75% {-webkit-transform: translate3d(-10px,0,0) rotate(120deg);}
+	100% {-webkit-transform: translate3d(0,20px,0) rotate(120deg);}
+}
+
+@-webkit-keyframes sphere_rotate {
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+
+.front .effect {
+	-moz-transform: scale(0);
+	-webkit-transform: scale(0);
+/*	height: 100px; width: 100px; background: red;*/
+}
+.front .effect_a {
+	-moz-transition: all 2s ease-in;
+	-moz-transform: scale(1);
+	-webkit-transition: all 2s ease-in;
+	-webkit-transform: scale(1);
+}

@@ -1,0 +1,18 @@
+
+.notice {position: absolute; top: 25px; left: 25px; background: transparent url(/img/bg_error.png) no-repeat top left; width: 200px; height: 150px; padding: 60px 55px 0;}
+
+#header h1 {opacity: 1;}
+#header .front {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+}
+#header .front a {display: block; width: 160px; height: 226px; text-indent: -1000px;}
+
+.canvas {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+}
+#footer .teddy {opacity: 1;}
+
+.puzzle .error {display: block;}
+.jump .error {display: block;}

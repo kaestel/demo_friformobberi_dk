@@ -1,0 +1,94 @@
+/* 7_0.html */
+
+.dilemma.ready #header h1 {background: transparent url(/img/bg_header_7_0.png) no-repeat top center;}
+.dilemma hr {display: none;}
+.dilemma #content .canvas {background: transparent url(/img/bg_canvas_white.png) no-repeat center top; background-image: url(/img/bg_7_0_start.png), url(/img/bg_canvas_white.png);}
+
+/* CHOOSE DILEMMA */
+.dilemma ul.start {position: absolute; top: 330px; left: 0px; width: 1024px; height: 263px; list-style: none; }
+.dilemma ul.start li {text-indent: -9999px;}
+.dilemma ul.start li a {position: absolute; width: 190px; height: 145px;}
+.dilemma ul.start li .dilemma_1 {top: 26px; left: 209px;}
+.dilemma ul.start li .dilemma_2 {top: 117px; left: 332px; z-index: 15;}
+.dilemma ul.start li .dilemma_3 {top: 121px; left: 520px; z-index: 10;}
+.dilemma ul.start li .dilemma_4 {top: 0px; left: 646px;}
+
+/* WEBKIT FLICKER */
+.dilemma span,
+.dilemma .label,
+.dilemma form {-webkit-transform: translate3d(0, 0, 0);}
+
+
+.dilemma_1 #content .canvas {background-image: url(/img/bg_7_0_dilemma_1.png);}
+.dilemma_2 #content .canvas {background-image: url(/img/bg_7_0_dilemma_2.png);}
+.dilemma_3 #content .canvas {background-image: url(/img/bg_7_0_dilemma_3.png);}
+.dilemma_4 #content .canvas {background-image: url(/img/bg_7_0_dilemma_4.png);}
+
+.dilemma span {line-height: 19px; font-family: "WendyLPBold"; font-size: 24px; display: block;}
+.dilemma .option_a span {
+	-webkit-transform: translate3d(0,0,0) rotate(-16deg);
+	-moz-transform: rotate(-16deg);
+}
+.dilemma .option_b span {
+	-webkit-transform: translate3d(0,0,0) rotate(-1deg);
+	-moz-transform: rotate(-1deg);
+}
+.dilemma .option_c span {
+	-webkit-transform: translate3d(0,0,0) rotate(20deg);
+	-moz-transform: rotate(20deg);
+}
+
+
+.dilemma label {background: transparent url(/img/bg_7_0_dilemma_options.png) no-repeat left top; position: absolute; text-align: center; opacity: 0;
+	-moz-transition: all 0.4s ease-in;
+	-webkit-transition: all 0.4s ease-in;
+	-webkit-transform: translate3d(0,0,0) scale(0);
+	-moz-transform: scale(0);
+}
+.dilemma .show label,
+.dilemma .show_a .option_a,
+.dilemma .show_b .option_b,
+.dilemma .show_c .option_c {opacity: 1;
+	-webkit-transform: translate3d(0,0,0) scale(1);
+	-moz-transform: scale(1);
+}
+.dilemma .option_a {z-index: 50; top: 432px; left: 242px; width: 170px; height: 130px; padding: 50px 25px 65px 15px;}
+.dilemma .option_b {z-index: 60; top: 454px; left: 440px; width: 160px; height: 100px; padding: 50px 25px 70px 20px; background-position: 0 -250px;}
+.dilemma .option_c {z-index: 50; top: 448px; left: 599px; width: 160px; height: 120px; padding: 50px 25px 60px 30px; background-position: 0 -500px;}
+
+.dilemma .sound {position: absolute;  height: 120px; left: 0px; z-index: 100; text-indent: -1000px; display: block; overflow: hidden;}
+.dilemma .option_a .sound {top: 114px; width: 210px;}
+.dilemma .option_b .sound {top: 92px; width: 200px;}
+.dilemma .option_c .sound {top: 96px; width: 215px;}
+
+
+.dilemma .evaluate {z-index: 70; position: absolute; top: 46px; left: 600px; width: 245px; height: 393px; background: transparent url(/img/bg_7_0_evaluate.png) no-repeat center top; padding: 0 50px 0 30px;
+	-moz-transition: all 0.6s ease-in;
+	-webkit-transition: all 0.6s ease-in;
+	-moz-transform-origin: 1000px 1000px;
+	-webkit-transform-origin: 1000px 1000px;
+
+	-moz-transform: scale(0);
+	-webkit-transform: translate3d(0,0,0) scale(0); 
+}
+.dilemma .show_a .evaluate,
+.dilemma .show_b .evaluate,
+.dilemma .show_c .evaluate {
+	-moz-transform: scale(1);
+	-webkit-transform: translate3d(0,0,0) scale(1);
+}
+.dilemma .evaluate p {line-height: 19px; font-family: "WendyLPBold"; font-size: 24px; text-align: center; padding: 40px 25px; border-radius: 120px;}
+.dilemma .evaluate .sound {top: 272px; left: 0px; width: 325px;}
+
+
+.dilemma #content .canvas input {display: none;}
+.dilemma .canvas p.dilemma {position: absolute; top: 320px; left: 240px; background: transparent url(/img/bg_7_0_speak.png) no-repeat top left; height: 87px; width: 102px; text-indent: -10000px;}
+
+.dilemma #content .canvas ul.nav {position: absolute; background: transparent url(/img/bg_7_0_back.png) no-repeat center top; width: 120px; height: 65px; top: 100px; left: 240px; list-style: none; text-indent: -9999px; margin: 0; padding: 0;}
+.dilemma #content .canvas ul.nav li {height: 65px;} 
+
+
+.dilemma_1 #footer .teddy .player {background: none;}
+.dilemma_2 #footer .teddy .player {background: none;}
+.dilemma_3 #footer .teddy .player {background: none;}
+.dilemma_4 #footer .teddy .player {background: none;}

@@ -1,0 +1,46 @@
+/* 9_0.html */
+
+.jump.ready #header h1 {background: transparent url(/img/bg_header_9_0.png) no-repeat top center;}
+.jump #content .canvas {background: transparent url(/img/bg_canvas_fuzzy.png) no-repeat center top;}
+
+.jump .error {display: none;}
+.jump.ready .error {display: block;}
+
+
+.jump .game {position: absolute; width: 500px; left: 50%; margin-left: -250px; height: 600px; top: 50%; margin-top: -300px;
+	/*background: red; opacity: 0.5;*/
+}
+
+.jump .trampolin {background: transparent url(/img/bg_9_0_trampolin.png) no-repeat bottom left; position: absolute; bottom: 0; left: 0; height: 189px; width: 158px; opacity: 0;}
+.jump .trampolin.ready {opacity: 1;}
+
+.jump .start_button {opacity: 0; position: absolute; top: 150px; left: 100px; width: 240px; height: 160px; background-color: transparent; background-repeat: no-repeat; background-position: top right, center center; background-image: url(/img/bg_9_0_start.png), url(/img/bg_error.png); font-family: "WendyLPRegular"; font-size: 30px; padding: 140px 30px 0; text-align: center; line-height: 24px;
+	-moz-transition: all 0.4s ease-in;
+	-webkit-transition: all 0.4s ease-in;
+	-moz-transform: scale(0);
+	-webkit-transform: scale(0);
+}
+.jump .wait .start_button {opacity: 1;
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+}
+
+.jump .score_board {opacity: 0; position: absolute; top: 0px; left: 410px; width: 150px; height: 100px; background: transparent url(/img/gx_score_board.png) no-repeat top left; font-family: "DigitalRegular"; font-size: 50px; color: red; padding: 60px 0 0; text-align: center; line-height: 24px;
+	-moz-transition: all 0.4s ease-in;
+	-webkit-transition: all 0.4s ease-in;
+	-moz-transform: scale(0);
+	-webkit-transform: scale(0);
+}
+.jump .score_board span {display: block; width: 110px; text-align: right;
+	-webkit-transform: rotate(22deg);
+	-moz-transform: rotate(22deg);
+}
+.jump .go .score_board {opacity: 1;
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+}
+.jump .game_over {position: absolute; top: 150px; left: 100px; width: 240px; height: 160px; background: transparent url(/img/bg_9_0_game_over.png) no-repeat center center; font-family: "WendyLPRegular"; font-size: 30px; padding: 105px 30px 0; text-align: center; line-height: 24px;}
+
+
+.jump .trampolinbear {background: transparent url(/img/bg_9_0_trampolin_bear.png) no-repeat top left; position: absolute; top: 380px; left: 0; height: 166px; width: 117px; z-index: 110; opacity: 0;}
+.jump .go .trampolinbear {opacity: 1;}

@@ -1,0 +1,42 @@
+/* 6_0.html */
+
+.gotchi.ready #header h1 {background: transparent url(/img/bg_header_6_0.png) no-repeat top center;}
+
+.gotchi #content .canvas {background: transparent url(/img/bg_canvas_white.png) no-repeat center top;}
+
+.gotchi #content .clothes_big {z-index: 1000; position: absolute; top: 150px; left: 318px; width: 397px; height: 477px; background: transparent url(/img/bg_6_0_teddy.png) no-repeat top center;}
+
+.gotchi #content .clothes_big div {position: absolute; top: 100px; left: 100px; height: 180px; width: 320px; background: transparent url(/img/bg_6_0_clothes_big.png) no-repeat top center; list-style: none;}
+
+.gotchi #content .clothes_big .t1 {top: -4px; left: 110px; height: 104px; width: 190px; display: none;}
+.gotchi #content .clothes_big .t1.i1 {background-position: 8px -1799px; display: block;}
+.gotchi #content .clothes_big .t2 {top: 68px; left: 143px; height: 70px; width: 135px; display: none;}
+.gotchi #content .clothes_big .t2.i2 {background-position: -192px -1800px; display: block;}
+.gotchi #content .clothes_big .t3 {top: 167px; left: 89px; z-index: 20; display: none;}
+.gotchi #content .clothes_big .t3.i3 {background-position: 0px 0px; display: block;}
+.gotchi #content .clothes_big .t3.i4 {background-position: 0px -360px; display: block;}
+.gotchi #content .clothes_big .t3.i5 {background-position: 0px -180px; display: block;}
+.gotchi #content .clothes_big .t4 {top: 243px; left: 71px; z-index: 10; display: none;}
+.gotchi #content .clothes_big .t4.i6 {background-position: 0px -1250px; display: block;}
+.gotchi #content .clothes_big .t4.i7 {background-position: 0px -1070px; display: block;}
+.gotchi #content .clothes_big .t4.i8 {background-position: -1px -1431px; display: block;}
+.gotchi #content .clothes_big .t4.i9 {background-position: 0px -540px; display: block;}
+.gotchi #content .clothes_big .t4.i10 {background-position: 0px -720px; display: block;}
+.gotchi #content .clothes_big .t4.i11 {background-position: 0px -899px; display: block;}
+.gotchi #content .clothes_big .t5 {top: 375px; left: 49px; height: 120px; width: 320px;display: none;}
+.gotchi #content .clothes_big .t5.i12 {background-position: 0px -1620px; display: block;}
+
+.gotchi #content ul.clothes  {position: absolute; top: 103px; left: 185px; width: 614px; height: 410px; z-index: 10000; background: transparent url(/img/bg_6_0_clothes_mini.png) no-repeat top center;}
+.gotchi #content ul.clothes li {text-indent: -9999px; list-style: none; position: absolute; width: 85px; height: 55px; z-index: 1000;}
+.gotchi #content ul.clothes li.t1.i1 {top: 70px; left: 509px;}
+.gotchi #content ul.clothes li.t2.i2 {top: 8px; left: 452px;}
+.gotchi #content ul.clothes li.t3.i3 {top: 8px; left: 140px;}
+.gotchi #content ul.clothes li.t3.i4 {top: 70px; left: 82px;}
+.gotchi #content ul.clothes li.t3.i5 {top: 137px; left: 60px;}
+.gotchi #content ul.clothes li.t4.i6 {top: 206px; left: 47px;}
+.gotchi #content ul.clothes li.t4.i7 {top: 273px; left: 68px;}
+.gotchi #content ul.clothes li.t4.i8 {top: 336px; left: 95px;}
+.gotchi #content ul.clothes li.t4.i9 {top: 196px; left: 543px;}
+.gotchi #content ul.clothes li.t4.i10 {top: 265px; left: 531px;}
+.gotchi #content ul.clothes li.t4.i11 {top: 336px; left: 490px;}
+.gotchi #content ul.clothes li.t5.i12 {top: 137px; left: 538px;}

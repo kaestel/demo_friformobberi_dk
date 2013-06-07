@@ -1,0 +1,118 @@
+/* 5_0.html */
+
+.puzzle.ready #header h1 {background: transparent url(/img/bg_header_5_0.png) no-repeat top center;}
+
+.puzzle #content .canvas {background: transparent url(/img/bg_canvas_wood.png) no-repeat top center;}
+.puzzle #content .canvas {background-image: url(/img/bg_5_0_start.png), url(/img/bg_canvas_wood.png);}
+
+.puzzle .error {display: none;}
+
+.puzzle .blur {opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; text-align: center; z-index: 30;
+	background-color: rgba(0, 0, 0, 0.75);
+}
+.puzzle .blur.go {opacity: 1;}
+
+.puzzle_1 #content .canvas,
+.puzzle_2 #content .canvas,
+.puzzle_3 #content .canvas,
+.puzzle_4 #content .canvas,
+.puzzle_5 #content .canvas {background-image: url(/img/bg_canvas_wood.png);}
+.puzzle #content .canvas ul.pick_game {list-style: none;}
+
+.puzzle #content .canvas .puzzlestart .pick_game {position: absolute; top: 283px; left: 234px; width: 585px; height: 347px;}
+.puzzle #content .canvas .puzzlestart .pick_game .puzzle {position: absolute; top: 65px; left: 0px; width: 150px; height: 114px;} 
+.puzzle #content .canvas .puzzlestart .pick_game .puzzle_2 {top: 184px; left: 88px;}
+.puzzle #content .canvas .puzzlestart .pick_game .puzzle_3 {top: 227px; left: 229px;}
+.puzzle #content .canvas .puzzlestart .pick_game .puzzle_4 {top: 142px; left: 368px;}
+.puzzle #content .canvas .puzzlestart .pick_game .puzzle_5 {top: 0px; left: 434px;}
+
+.puzzle #content .canvas ul.nav {position: absolute; background: transparent url(/img/bg_5_0_back.png) no-repeat center top; width: 120px; height: 71px; top: 573px; left: 448px; list-style: none; text-indent: -9999px; margin: 0; padding: 0;}
+.puzzle #content .canvas ul.nav li {height: 71px;}
+
+.puzzle #content .canvas .start {position: absolute; top: 100px; left: 282px; height: 475px; width: 475px; z-index: 40;}
+.puzzle #content .canvas .done {position: absolute; background: transparent url(/img/bg_5_0_done.png) no-repeat top center; top: 234px; left: 417px; height: 149px; width: 206px; z-index: 40;}
+
+.puzzle #content .canvas .piece {position: absolute; background: transparent url(/img/bg_5_0_puzzle_1.png) no-repeat top left; width: 300px; height: 300px; z-index: 35;}
+.puzzle #content .canvas .piece.fixed {z-index: 35;}
+.puzzle #content .canvas .piece.picked {z-index: 50;}
+.puzzle #content .canvas .piece_1 {background-position: 0px 0px;}
+.puzzle #content .canvas .piece_2 {background-position: 0px -300px;}
+.puzzle #content .canvas .piece_3 {background-position: 0px -600px;}
+.puzzle #content .canvas .piece_4 {background-position: 0px -900px;}
+.puzzle #content .canvas .piece_5 {background-position: 0px -1200px;}
+.puzzle #content .canvas .piece_6 {background-position: 0px -1500px;}
+.puzzle #content .canvas .piece_7 {background-position: 0px -1800px;}
+.puzzle #content .canvas .piece_8 {background-position: 0px -2100px;}
+.puzzle #content .canvas .piece_9 {background-position: 0px -2400px;}
+.puzzle #content .canvas .piece_10 {background-position: 0px -2700px;}
+.puzzle #content .canvas .piece_11 {background-position: 0px -3000px;}
+
+/* PUZZLE 1 */
+.puzzle_1 #content .canvas .piece {background-image: url(/img/bg_5_0_puzzle_1.png);}
+.puzzle_1 #content .canvas .piece_1 {top: 103px; left: 507px; width: 162px; height: 115px;}
+.puzzle_1 #content .canvas .piece_2 {top: 104px; left: 444px; width: 210px; height: 210px;}
+.puzzle_1 #content .canvas .piece_3 {top: 140px; left: 304px; width: 183px; height: 241px;}
+.puzzle_1 #content .canvas .piece_4 {top: 217px; left: 280px; width: 119px; height: 146px;}
+.puzzle_1 #content .canvas .piece_5 {top: 322px; left: 287px; width: 133px; height: 153px;}
+.puzzle_1 #content .canvas .piece_6 {top: 143px; left: 569px; width: 189px; height: 208px;}
+.puzzle_1 #content .canvas .piece_7 {top: 226px; left: 401px; width: 178px; height: 231px;}
+.puzzle_1 #content .canvas .piece_8 {top: 274px; left: 544px; width: 211px; height: 208px;}
+.puzzle_1 #content .canvas .piece_9 {top: 408px; left: 315px; width: 226px; height: 160px;}
+.puzzle_1 #content .canvas .piece_10 {top: 353px; left: 486px; width: 139px; height: 224px;}
+.puzzle_1 #content .canvas .piece_11 {top: 376px; left: 618px; width: 128px; height: 185px;}
+
+/* PUZZLE 2 */
+.puzzle_2 #content .canvas .piece {background-image: url(/img/bg_5_0_puzzle_2.png);}
+.puzzle_2 #content .canvas .piece_1 {top: 103px; left: 514px; width: 200px; height: 215px;}
+.puzzle_2 #content .canvas .piece_2 {top: 103px; left: 370px; width: 183px; height: 217px;}
+.puzzle_2 #content .canvas .piece_3 {top: 159px; left: 427px; width: 195px; height: 190px;}
+.puzzle_2 #content .canvas .piece_4 {top: 154px; left: 280px; width: 136px; height: 227px;}
+.puzzle_2 #content .canvas .piece_5 {top: 326px; left: 286px; width: 178px; height: 226px;}
+.puzzle_2 #content .canvas .piece_6 {top: 284px; left: 389px; width: 189px; height: 149px;}
+.puzzle_2 #content .canvas .piece_7 {top: 191px; left: 593px; width: 162px; height: 231px;}
+.puzzle_2 #content .canvas .piece_8 {top: 332px; left: 630px; width: 127px; height: 166px;}
+.puzzle_2 #content .canvas .piece_9 {top: 344px; left: 496px; width: 204px; height: 178px;}
+.puzzle_2 #content .canvas .piece_10 {top: 403px; left: 388px; width: 145px; height: 169px;}
+.puzzle_2 #content .canvas .piece_11 {top: 438px; left: 509px; width: 159px; height: 133px;}
+
+/* PUZZLE 3 */
+.puzzle_3 #content .canvas .piece {background-image: url(/img/bg_5_0_puzzle_3.png);}
+.puzzle_3 #content .canvas .piece_1 {top: 133px; left: 594px; width: 143px; height: 253px;}
+.puzzle_3 #content .canvas .piece_2 {top: 103px; left: 436px; width: 222px; height: 136px;}
+.puzzle_3 #content .canvas .piece_3 {top: 139px; left: 300px; width: 205px; height: 215px;}
+.puzzle_3 #content .canvas .piece_4 {top: 232px; left: 281px; width: 130px; height: 221px;}
+.puzzle_3 #content .canvas .piece_5 {top: 319px; left: 347px; width: 255px; height: 111px;}
+.puzzle_3 #content .canvas .piece_6 {top: 414px; left: 308px; width: 208px; height: 158px;}
+.puzzle_3 #content .canvas .piece_7 {top: 396px; left: 451px; width: 207px; height: 177px;}
+.puzzle_3 #content .canvas .piece_8 {top: 199px; left: 422px; width: 227px; height: 140px;}
+.puzzle_3 #content .canvas .piece_9 {top: 216px; left: 563px; width: 133px; height: 215px;}
+.puzzle_3 #content .canvas .piece_10 {top: 243px; left: 614px; width: 144px; height: 290px;}
+.puzzle_3 #content .canvas .piece_11 {display: none;}
+
+/* PUZZLE 4 */
+.puzzle_4 #content .canvas .piece {background-image: url(/img/bg_5_0_puzzle_4.png);}
+.puzzle_4 #content .canvas .piece_1 {top: 126px; left: 541px; width: 197px; height: 177px;}
+.puzzle_4 #content .canvas .piece_2 {top: 103px; left: 368px; width: 275px; height: 172px;}
+.puzzle_4 #content .canvas .piece_3 {top: 156px; left: 293px; width: 195px; height: 222px;}
+.puzzle_4 #content .canvas .piece_4 {top: 245px; left: 568px; width: 190px; height: 215px;}
+.puzzle_4 #content .canvas .piece_5 {top: 210px; left: 400px; width: 267px; height: 206px;}
+.puzzle_4 #content .canvas .piece_6 {top: 241px; left: 282px; width: 137px; height: 212px;}
+.puzzle_4 #content .canvas .piece_7 {top: 298px; left: 525px; width: 98px; height: 122px;}
+.puzzle_4 #content .canvas .piece_8 {top: 343px; left: 569px; width: 168px; height: 222px;}
+.puzzle_4 #content .canvas .piece_9 {top: 410px; left: 460px; width: 160px; height: 161px;}
+.puzzle_4 #content .canvas .piece_10 {top: 342px; left: 362px; width: 155px; height: 222px;}
+.puzzle_4 #content .canvas .piece_11 {top: 387px; left: 293px; width: 127px; height: 142px;}
+
+/* PUZZLE 5 */
+.puzzle_5 #content .canvas .piece {background-image: url(/img/bg_5_0_puzzle_5.png);}
+.puzzle_5 #content .canvas .piece_1 {top: 140px; left: 327px; width: 187px; height: 176px;}
+.puzzle_5 #content .canvas .piece_2 {top: 102px; left: 441px; width: 273px; height: 170px;}
+.puzzle_5 #content .canvas .piece_3 {top: 180px; left: 280px; width: 192px; height: 280px;}
+.puzzle_5 #content .canvas .piece_4 {top: 204px; left: 340px; width: 270px; height: 185px;}
+.puzzle_5 #content .canvas .piece_5 {top: 183px; left: 545px; width: 212px; height: 182px;}
+.puzzle_5 #content .canvas .piece_6 {top: 229px; left: 490px; width: 192px; height: 247px;}
+.puzzle_5 #content .canvas .piece_7 {top: 311px; left: 654px; width: 103px; height: 201px;}
+.puzzle_5 #content .canvas .piece_8 {top: 379px; left: 515px; width: 165px; height: 191px;}
+.puzzle_5 #content .canvas .piece_9 {top: 324px; left: 402px; width: 170px; height: 245px;}
+.puzzle_5 #content .canvas .piece_10 {top: 391px; left: 292px; width: 192px; height: 157px;}
+.puzzle_5 #content .canvas .piece_11 {display: none;}

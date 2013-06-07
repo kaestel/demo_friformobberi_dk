@@ -1,0 +1,1 @@
+var segment = "mobile_touch";
