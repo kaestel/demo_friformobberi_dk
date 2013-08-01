@@ -10,7 +10,7 @@
 	<link rel="shortcut icon" href="/icon.png" />
 	<link rel="apple-touch-icon" href="/icon.png" />
 
-	<? if($_SESSION["dev_includes"]) { ?>
+	<? if($_SESSION["dev"]) { ?>
 		<link type="text/css" rel="stylesheet" media="all" href="/css/lib/seg_<?= $_SESSION["segment"] ?>_include.css" />
 		<script type="text/javascript" src="/js/lib/seg_<?= $_SESSION["segment"] ?>_include.js"></script>
 	<? } else { ?>

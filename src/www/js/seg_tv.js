@@ -1,7 +1,9 @@
 
+/*u.js*/
 var u, Util = u = new function() {}
-u.version = 3;
+u.version = 0.3;
 
+/*u-debug.js*/
 Util.testURL = function(url) {
 	return true;
 	return url.match(/http\:\/\/mkn\.|http\:\/\/w\.|\.local/i);
@@ -85,6 +87,7 @@ Util.bug = function(target, message) {
 	}
 }
 
+/*u-dom.js*/
 Util.ge = function(id, target) {
 	var e, i, regexp, t;
 	t = target ? target : document;
@@ -212,6 +215,7 @@ Util.wrapElement = function(e, wrap) {
 	return wrap;
 }
 
+/*u-init.js*/
 Util.Objects = u.o = new Array();
 Util.init = function() {
 	var i, e, elements, ij_value;
@@ -227,6 +231,7 @@ Util.init = function() {
 }
 window.onload = u.init;
 
+/*i-invalid.js*/
 Util.Objects["validdevice"] = new function() {
 	this.init = function(e) {
 		e.innerHTML = "";

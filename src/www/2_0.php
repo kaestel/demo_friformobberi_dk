@@ -1,4 +1,4 @@
-<?php include_once("include/segment.php") ?>
+<? include_once($_SERVER['FRAMEWORK_PATH']."/include/segment.php") ?>
 <?php
 
 $ps = isset($_POST["ps"]) ? $_POST["ps"] : false;
@@ -10,8 +10,9 @@ $file = isset($_POST["file"]) ? $_POST["file"] : "";
 // create diploma
 if($ps == "create" && $name && $gender) {
 
-	// call image generator 
-	$image = file_get_contents("http://htmlto.dearapi.com/api/v1/jpg?jpg[crop_w]=650&jpg[uri]=".urlencode("http://ffm.wires.dk/2_0-diploma.php?name=$name&gender=$gender"));
+	// call image generator
+//	print "http://htmlto.dearapi.com/api/v1/jpg?jpg[crop_w]=650&jpg[uri]=".urlencode("http://".$_SERVER["HTTP_HOST"]."/2_0-diploma.php?name=$name&gender=$gender");
+	$image = file_get_contents("http://htmlto.dearapi.com/api/v1/jpg?jpg[crop_w]=650&jpg[uri]=".urlencode("http://".$_SERVER["HTTP_HOST"]."/2_0-diploma.php?name=$name&gender=$gender"));
 //	$image = file_get_contents("img/bg_2_0_diplom_boy.jpg");
 	if($image) {
 		$file = "library/diplomas/".date("Ymd_His")."_".preg_replace("/[ÆØÅÖÜæøåöü\?\=\:\.\!\+]/", "", preg_replace("/[, \/]/", "_", $name)).".jpg";

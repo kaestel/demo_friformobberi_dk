@@ -1,4 +1,4 @@
-<?php include_once("include/segment.php") ?>
+<? include_once($_SERVER['FRAMEWORK_PATH']."/include/segment.php") ?>
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,7 +1,9 @@
 
+/*u.js*/
 var u, Util = u = new function() {}
-u.version = 3;
+u.version = 0.3;
 
+/*u-debug.js*/
 Util.testURL = function(url) {
 	return true;
 	return url.match(/http\:\/\/mkn\.|http\:\/\/w\.|\.local/i);
@@ -85,6 +87,7 @@ Util.bug = function(target, message) {
 	}
 }
 
+/*u-url.js*/
 Util.getVar = function(s) {
 	var p = location.search;
 	var start_index = (p.indexOf("&" + s + "=") > -1) ? p.indexOf("&" + s + "=") + s.length + 2 : ((p.indexOf("?" + s + "=") > -1) ? p.indexOf("?" + s + "=") + s.length + 2 : false);
@@ -123,6 +126,7 @@ Util.setHashPath = function(path) {
 	return Util.getHashPath();
 }
 
+/*u-dom.js*/
 Util.ge = function(id, target) {
 	var e, i, regexp, t;
 	t = target ? target : document;
@@ -250,6 +254,7 @@ Util.wrapElement = function(e, wrap) {
 	return wrap;
 }
 
+/*u-flash.js*/
 Util.flash = function(e, url, id, w, h) {
 	w = w ? w : e.offsetWidth;
 	h = h ? h : e.offsetHeight;
@@ -270,6 +275,7 @@ Util.flash = function(e, url, id, w, h) {
 	return object;
 }
 
+/*u-xmlrequest.js*/
 Util.createRequestObject = function() {
 	var request_object = false;
 		try {
@@ -346,6 +352,7 @@ Util.validateResponse = function(request, state){
 	return e;
 }
 
+/*u-events.js*/
 Util.Events = u.e = new function() {
 	this.event_pref = typeof(document.ontouchmove) == "undefined" ? "mouse" : "touch";
 	this.kill = function(event) {
@@ -841,6 +848,7 @@ Util.Events = u.e = new function() {
 	}
 }
 
+/*u-image.js*/
 Util.Image = u.i = new function() {
 	this.load = function(e, src) {
 		var image = new Image();
@@ -863,6 +871,7 @@ Util.Image = u.i = new function() {
 	}
 }
 
+/*u-position.js*/
 Util.absLeft = function(e) {
 	if(e.offsetParent) {
 		return e.offsetLeft + Util.absLeft(e.offsetParent);
@@ -882,6 +891,7 @@ Util.eventY = function(event){
 	return (event.targetTouches ? event.targetTouches[0].pageY : event.pageY);
 }
 
+/*u-timer.js*/
 Util.Timer = u.t = new function() {
 	this.actions = new Array();
 	this.objects = new Array();
@@ -910,6 +920,7 @@ Util.Timer = u.t = new function() {
 	}
 }
 
+/*u-animation.js*/
 Util.Animation = u.a = new function() {
 	this.variant = function(e) {
 		if(this.implementation == undefined) {
@@ -981,6 +992,7 @@ Util.Animation = u.a = new function() {
 	}
 }
 
+/*u-system.js*/
 Util.explorer = function(version, scope) {
 	if(document.all) {
 		var undefined;
@@ -1063,7 +1075,9 @@ Util.osx = function() {
 	return (navigator.userAgent.indexOf("OS X") >= 0) ? true : false;
 }
 
+/*s-desktop.js*/
 var segment = "desktop";
+/*u-init.js*/
 Util.Objects = u.o = new Array();
 Util.init = function() {
 	window.scrollTo(0,1);
@@ -1079,6 +1093,7 @@ Util.init = function() {
 	}
 }
 window.onload = u.init;
+/*u-video.js*/
 Util.videoPlayer = function(e) {
 	var player = u.ae(e, "div", "player");
 	player.video = u.ae(player, "video");
@@ -1179,6 +1194,7 @@ Util.videoPlayer = function(e) {
 	}
 	return player;
 }
+/*u-audio.js*/
 Util.audioPlayer = function(e) {
 	var player = u.ae(e, "div", "player");
 	player.audio = u.ae(player, "audio");
@@ -1256,6 +1272,7 @@ Util.audioPlayer = function(e) {
 	}
 	return player;
 }
+/*u-preload.js*/
 Util.preload = function(node, content) {
 	var i;
 	var p = u.ae(document.body, "ul", "preloader");
@@ -1284,6 +1301,7 @@ Util.preload = function(node, content) {
 	}
 }
 
+/*i-page.js*/
 Util.Objects["page"] = new function() {
 	this.init = function(e) {
 		e.preload = ({
@@ -1367,6 +1385,7 @@ Util.Objects["page"] = new function() {
 			this.content.node = node;
 			u.e.onAnimationEnd(this.content, this.content.loadContent);
 			u.e.onTransitionEnd(this.content, this.content.loadContent);
+			u.a.transition(u.ge("canvas"), "all 0.4s ease-in");
 			u.removeClass(document.body, "ready");
 			if(segment == "desktop" && !this.player.playing && !u.ge("toggle_music").className.match(/off/)) {
 				this.player.play();
@@ -1412,6 +1431,7 @@ Util.hrefToClick = function(e) {
 		location.href = this.url;
 	}
 }
+/*i-front.js*/
 Util.Objects["front"] = new function() {
 	this.init = function(e) {
 		e.preload = ({
@@ -1508,6 +1528,7 @@ Util.Objects["front"] = new function() {
 		}
 	}
 }
+/*i-massage.js*/
 Util.Objects["massage"] = new function() {
 	this.init = function(e) {
 		e.preload = ({
@@ -1554,6 +1575,7 @@ Util.Objects["massage"] = new function() {
 		}
 	}
 }
+/*i-friends.js*/
 Util.Objects["friends"] = new function() {
 	this.init = function(e) {
 		e.preload = ({
@@ -1689,6 +1711,7 @@ Util.Objects["friends"] = new function() {
 	}
 }
 
+/*i-dance.js*/
 Util.Objects["dance"] = new function() {
 	this.init = function(e) {
 		e.preload = ({
@@ -1738,6 +1761,7 @@ Util.Objects["dance"] = new function() {
 		}
 	}
 }
+/*i-puzzle.js*/
 Util.Objects["puzzlestart"] = new function() {
 	this.init = function(e) {
 		e.preload = ({
@@ -1909,6 +1933,7 @@ Util.Objects["puzzle"] = new function() {
 		}
 	}	
 }
+/*i-gotchi.js*/
 Util.Objects["gotchi"] = new function() {
 	this.init = function(e) {
 		e.preload = ({
@@ -1951,6 +1976,7 @@ Util.Objects["gotchi"] = new function() {
 	}
 }
 
+/*i-dilemma.js*/
 Util.Objects["dilemmastart"] = new function() {
 	this.init = function(e) {
 		e.preload = ({
@@ -2056,6 +2082,7 @@ Util.Objects["dilemma"] = new function() {
 		}
 	}
 }
+/*i-jump.js*/
 Util.Objects["jump"] = new function() {
 	this.init = function(e) {
 		e.preload = ({

@@ -162,6 +162,8 @@ Util.Objects["page"] = new function() {
 			u.e.onTransitionEnd(this.content, this.content.loadContent);
 
 
+			u.a.transition(u.ge("canvas"), "all 0.4s ease-in");
+			
 			// explicit removal of ready class to trigger "fade out"
 			u.removeClass(document.body, "ready");
 //			u.addClass(document.body, "transition");
