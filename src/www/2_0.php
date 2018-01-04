@@ -1,4 +1,4 @@
-<? include_once($_SERVER['FRAMEWORK_PATH']."/include/segment.php") ?>
+<?php include_once($_SERVER["LOCAL_PATH"]."/includes/segment.php") ?>
 <?php
 
 $ps = isset($_POST["ps"]) ? $_POST["ps"] : false;
